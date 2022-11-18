@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推雪球</title>
+    <link rel="shortcut icon" href="/Image/web/snowball1.png">
+    <style>
+        body{
+            height:auto;
+            margin:0;
+            background-color: rgb(244, 244, 244);
+        }
+        /*导航栏样式*/
+        .navbar{
+            height: 60px;
+            width: 100%;
+            margin:auto;
+            background-color: white;
+        }
+        /*导航栏内部样式*/
+        .navbar-wrapper{
+            display: flex;
+            width: 70%;
+            margin-right:auto;
+            margin-left:auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        /*logo样式*/
+        .logo{
+            height: 50px;
+            width: auto;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        /*导航栏菜单样式*/
+        .menu{
+            height: 60px;
+            width: 80%;
+            margin-left:auto;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        /*导航栏菜单样式按钮样式*/
+        .menu-inner{
+            height: 60px;
+            width:120px;
+            margin:0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*导航栏菜单样式按钮图标样式*/
+        .icon{
+            height:25px;
+            width: 25px;
+            filter: invert(80%);
+        }
+        /*导航栏菜单样式按钮标签样式*/
+        .label{
+            margin:10px;
+            font-size:15px;
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+        }
+        /*主体样式*/
+        .mainbody{
+            width: 70%;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+        }
+        /*侧标栏样式*/
+        .sidebar{
+            flex:1;
+            margin-top:15px;
+            margin-right:15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /*侧边栏盒子*/
+        .sidebar-box{
+            height:auto;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /*侧边栏标题样式*/
+        .sidebar-label{
+            height:50px;
+            width: 100%;
+            margin-bottom:2px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }      
+        .sidebar-icon{
+            height: 25px;
+            width:25px;
+            margin-right:10px;
+            }   
+        .sidebar-text{
+            font-size:15px;
+            letter-spacing: 10px;
+        }
+        /*内容栏样式*/
+        .contentbar{
+            flex:4;
+            height:auto;
+            margin-top:15px;
+            margin-left:50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contentbox{
+            height: 200px;
+            width:100%;
+            margin-bottom:30px;
+            background-color: white;
+        }
+        /*辅助框线
+        .border{
+            border:1px dashed grey;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="navbar border">
+        <div class="navbar-wrapper">
+            <div class="picbox">
+                <img src="/Image/web/snowball1.png" class="logo" >
+            </div>
+            <div class="menu border">
+                <div class="menu-inner border">
+                    <img src="/Image/web/书本.png" class="icon">
+                    <span class="label">CICPA</span>
+                </div>
+                <div class="menu-inner border">
+                    <img src="/Image/web/经济.png" class="icon">
+                    <span class="label">Economic</span>
+                </div>
+                <div class="menu-inner border">
+                    <img src="/Image/web/博客.png" class="icon">
+                    <span class="label">Blog</span>
+                </div>
+                <div class="menu-inner border">
+                    <img src="/Image/web/头像.png" class="icon" style="height:30px; width:30px;">
+                    <span class="label" style="margin:5px">About</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainbody">
+        <div class="sidebar border">
+            <div class="sidebar-box">
+                <div class="sidebar-label border">
+                    <img src="/Image/web/拼图.png" class="sidebar-icon border">
+                    <p class="sidebar-text border">会计</p>
+                </div>
+                <div class="sidebar-label border">
+                    <img src="/Image/web/拼图.png" class="sidebar-icon border">
+                    <p class="sidebar-text border">财管</p>
+                </div>
+                <div class="sidebar-label border">
+                    <img src="/Image/web/拼图.png" class="sidebar-icon border">
+                    <p class="sidebar-text border">审计</p>
+                </div>
+                <div class="sidebar-label border">
+                    <img src="/Image/web/拼图.png" class="sidebar-icon border">
+                    <p class="sidebar-text border">税法</p>
+                </div>
+                <div class="sidebar-label border" style="border-bottom: 0px;">
+                    <img src="/Image/web/拼图.png" class="sidebar-icon border">
+                    <p class="sidebar-text border" ">战略</p>
+                </div>
+            </div>
+             
+        </div>
+        <div class="contentbar border">
+            <div class="contentbox"></div>
+            <div class="contentbox"></div>
+            <div class="contentbox"></div>
+            <div class="contentbox"></div>
+        </div>
+    </div>
+</body>
+</html>
